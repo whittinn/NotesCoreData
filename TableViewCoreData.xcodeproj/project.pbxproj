@@ -88,11 +88,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C265DFF2763064200DBF16E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C7A2EBF2761746400B32556 /* UserResponse+CoreDataProperties.swift */,
+				8C7A2EBE2761746400B32556 /* UserResponse+CoreDataClass.swift */,
+				8C7A2E912761711600B32556 /* TableViewCoreData.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C265E002763064B00DBF16E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C7A2E8E2761711600B32556 /* Main.storyboard */,
+				8C7A2E942761711F00B32556 /* Assets.xcassets */,
+				8C7A2E962761711F00B32556 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			path = TableViewCoreData/View;
+			sourceTree = "<group>";
+		};
+		8C265E012763064C00DBF16E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C7A2ECA2761ABCE00B32556 /* ResponseTableViewCell.swift */,
+				8C7A2EC527617DD500B32556 /* TableviewExtension.swift */,
+				8C7A2E8C2761711600B32556 /* ViewController.swift */,
+				8C7A2ECF2761AE2A00B32556 /* DateConverter.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8C265E02276306D400DBF16E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C7A2E992761711F00B32556 /* Info.plist */,
+				8C7A2E882761711600B32556 /* AppDelegate.swift */,
+				8C7A2E8A2761711600B32556 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8C7A2E7C2761711600B32556 = {
 			isa = PBXGroup;
 			children = (
-				8C7A2EBE2761746400B32556 /* UserResponse+CoreDataClass.swift */,
-				8C7A2EBF2761746400B32556 /* UserResponse+CoreDataProperties.swift */,
+				8C265E02276306D400DBF16E /* Resources */,
+				8C265E012763064C00DBF16E /* Controller */,
+				8C265E002763064B00DBF16E /* View */,
+				8C265DFF2763064200DBF16E /* Model */,
 				8C7A2E872761711600B32556 /* TableViewCoreData */,
 				8C7A2EA12761712000B32556 /* TableViewCoreDataTests */,
 				8C7A2EAC2761712000B32556 /* TableViewCoreDataUITests */,
@@ -113,17 +157,6 @@
 		8C7A2E872761711600B32556 /* TableViewCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				8C7A2E882761711600B32556 /* AppDelegate.swift */,
-				8C7A2E8A2761711600B32556 /* SceneDelegate.swift */,
-				8C7A2EC527617DD500B32556 /* TableviewExtension.swift */,
-				8C7A2E8C2761711600B32556 /* ViewController.swift */,
-				8C7A2ECF2761AE2A00B32556 /* DateConverter.swift */,
-				8C7A2ECA2761ABCE00B32556 /* ResponseTableViewCell.swift */,
-				8C7A2E8E2761711600B32556 /* Main.storyboard */,
-				8C7A2E942761711F00B32556 /* Assets.xcassets */,
-				8C7A2E962761711F00B32556 /* LaunchScreen.storyboard */,
-				8C7A2E992761711F00B32556 /* Info.plist */,
-				8C7A2E912761711600B32556 /* TableViewCoreData.xcdatamodeld */,
 			);
 			path = TableViewCoreData;
 			sourceTree = "<group>";
@@ -462,7 +495,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CRPB5AHSY2;
-				INFOPLIST_FILE = TableViewCoreData/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,7 +514,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CRPB5AHSY2;
-				INFOPLIST_FILE = TableViewCoreData/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
